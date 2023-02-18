@@ -1,6 +1,7 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
+/* Header */
 .header {
     display:flex;
     flex-direction: column;
@@ -10,6 +11,7 @@
         display: flex;
         flex-direction: column;
         background-color: v.$header_color;
+        border-bottom: 3px solid v.$secondary_color;
     
         .header__logo {
             display: flex;
@@ -17,7 +19,7 @@
             justify-content: center;
             .logo {
                 background-size: cover;
-                width: 8%;
+                width: 10%;
                 height: auto;
             }
     
@@ -26,23 +28,33 @@
     }
     
     .header__principal--navegacion {
-        border: 2px solid yellow;
         display:flex;
         flex-direction: row;
         justify-content: flex-end;
 
         .navegacion {
             margin: 0.5rem;
-            // color: v.$primary;
         }
 
         .icono {
             width: 3rem;
-           // fill: v.$secondary_color!important;
         }
-
+       
         .carrito {
             margin-right: 3rem;
+        }
+    }
+
+    .header__navegacion {
+        border: 2px solid red;
+        
+
+        &--enlaces {
+            border: 2px solid green;
+            padding: 1.5rem;
+            display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
         }
     }
 }

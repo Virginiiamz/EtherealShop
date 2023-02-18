@@ -307,6 +307,7 @@ template {
   display: none;
 }
 
+/* Mixins */
 @font-face {
   font-family: EncodeExtra;
   src: url(../../../build/fonts/EncodeSansSC-ExtraLight.ttf);
@@ -319,7 +320,6 @@ template {
   font-family: EncodeMedium;
   src: url(../../../build/fonts/EncodeSansSC-Medium.ttf);
 }
-/* Mixins */
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -328,6 +328,11 @@ html {
 body {
   font-family: "EncodeExtra";
   width: 100%;
+  font-size: 1.8rem;
+}
+
+.container {
+  width: 90%;
 }
 
 a {
@@ -339,6 +344,7 @@ img {
   display: block;
 }
 
+/* Header */
 .header {
   display: flex;
   flex-direction: column;
@@ -348,6 +354,7 @@ img {
   display: flex;
   flex-direction: column;
   background-color: #E0E1E6;
+  border-bottom: 3px solid #7C7C7C;
 }
 .header__principal .header__logo {
   display: flex;
@@ -356,11 +363,10 @@ img {
 }
 .header__principal .header__logo .logo {
   background-size: cover;
-  width: 8%;
+  width: 10%;
   height: auto;
 }
 .header .header__principal--navegacion {
-  border: 2px solid yellow;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -373,6 +379,16 @@ img {
 }
 .header .header__principal--navegacion .carrito {
   margin-right: 3rem;
+}
+.header .header__navegacion {
+  border: 2px solid red;
+}
+.header .header__navegacion--enlaces {
+  border: 2px solid green;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=sass.css.map */
