@@ -371,9 +371,6 @@ img {
 .header .header__principal--navegacion .icono {
   width: 3rem;
 }
-.header .header__principal--navegacion .svg {
-  fill: #7C7C7C;
-}
 .header .header__principal--navegacion .carrito {
   margin-right: 3rem;
 }
