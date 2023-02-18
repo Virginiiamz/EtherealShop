@@ -1,9 +1,6 @@
 @use 'variables' as v;
 @use 'mixins' as m;
 
-
-
-
 html {
     font-size: 62.5%;
     @include m.box-sizing(border-box);
@@ -11,6 +8,7 @@ html {
 
 body {
     font-family: v.$main_font;
+    width: 100%;
     // font-size: 1.8rem;
 }
 

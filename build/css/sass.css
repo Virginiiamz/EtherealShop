@@ -327,6 +327,7 @@ html {
 
 body {
   font-family: "EncodeExtra";
+  width: 100%;
 }
 
 a {
@@ -338,8 +339,43 @@ img {
   display: block;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .header__principal {
+  display: flex;
+  flex-direction: column;
   background-color: #E0E1E6;
+}
+.header__principal .header__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.header__principal .header__logo .logo {
+  background-size: cover;
+  width: 8%;
+  height: auto;
+}
+.header .header__principal--navegacion {
+  border: 2px solid yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.header .header__principal--navegacion .navegacion {
+  margin: 0.5rem;
+}
+.header .header__principal--navegacion .icono {
+  width: 3rem;
+}
+.header .header__principal--navegacion .svg {
+  fill: #7C7C7C;
+}
+.header .header__principal--navegacion .carrito {
+  margin-right: 3rem;
 }
 
 /*# sourceMappingURL=sass.css.map */

@@ -1,6 +1,54 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
-.header__principal {
-    background-color: v.$header_color;
+.header {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    &__principal {
+        display: flex;
+        flex-direction: column;
+        background-color: v.$header_color;
+    
+        .header__logo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .logo {
+                background-size: cover;
+                width: 8%;
+                height: auto;
+            }
+    
+        }
+    
+    }
+    
+    .header__principal--navegacion {
+        border: 2px solid yellow;
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        .navegacion {
+            margin: 0.5rem;
+            // color: v.$primary;
+        }
+
+        .icono {
+            width: 3rem;
+           // fill: v.$secondary_color!important;
+        }
+
+        .svg{
+            fill: v.$secondary_color;
+        }
+
+        .carrito {
+            margin-right: 3rem;
+        }
+    }
 }
+
+
