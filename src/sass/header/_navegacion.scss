@@ -5,15 +5,23 @@
     text-align: center;
 
     &--enlaces {
-        padding: 1.5rem;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         font-weight: v.$mainFont_Extra;
-        color: black;
+        margin-top: 0.5rem;
+    }
+
+    .enlaces {
+        padding: 1rem 2rem;
     }
 
     &--enlaces .inicio:link {
         font-weight: v.$linkFont_Regular;
+    }
+
+    &--enlaces .enlaces:hover {
+        background-color: v.$third_color;
+        transition-duration: 0.5s;
     }
 }

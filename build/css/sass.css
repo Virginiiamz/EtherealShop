@@ -393,15 +393,21 @@ img {
   text-align: center;
 }
 .header__navegacion--enlaces {
-  padding: 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   font-weight: 200;
-  color: black;
+  margin-top: 0.5rem;
+}
+.header__navegacion .enlaces {
+  padding: 1rem 2rem;
 }
 .header__navegacion--enlaces .inicio:link {
   font-weight: 400;
+}
+.header__navegacion--enlaces .enlaces:hover {
+  background-color: rgba(124, 124, 124, 0.3098039216);
+  transition-duration: 0.5s;
 }
 
 /*# sourceMappingURL=sass.css.map */
