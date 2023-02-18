@@ -1,6 +1,8 @@
 @use 'variables' as v;
 @use 'mixins' as m;
 
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200;400;500&display=swap');
+
 html {
     font-size: 62.5%;
     @include m.box-sizing(border-box);

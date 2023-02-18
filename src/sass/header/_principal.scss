@@ -20,8 +20,14 @@
 
             .logo {
                 background-size: cover;
-                width: 10%;
+                width: 20%;
                 height: auto;
+            }
+
+            @include m.desktop {
+                .logo {
+                    width: 8%;
+                }
             }
 
         }
@@ -38,7 +44,13 @@
         }
 
         .icono {
-            width: 3rem;
+            width: 2.5rem;
+        }
+
+        @include m.desktop {
+            .icono {
+                width: 3rem;
+            }
         }
 
         .carrito {

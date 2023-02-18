@@ -2,6 +2,7 @@
 @use '../base/mixins' as m;
 
 .header__navegacion {
+    text-align: center;
 
     &--enlaces {
         padding: 1.5rem;
@@ -10,5 +11,9 @@
         justify-content: space-evenly;
         font-weight: v.$mainFont_Extra;
         color: black;
+    }
+
+    &--enlaces .inicio:link {
+        font-weight: v.$linkFont_Regular;
     }
 }
