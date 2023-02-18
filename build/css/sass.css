@@ -308,35 +308,20 @@ template {
 }
 
 /* Mixins */
-@font-face {
-  font-family: EncodeExtra;
-  src: url(../../../build/fonts/EncodeSansSC-ExtraLight.ttf);
-}
-@font-face {
-  font-family: EncodeRegular;
-  src: url(../../../build/fonts/EncodeSansSC-Regular.ttf);
-}
-@font-face {
-  font-family: EncodeMedium;
-  src: url(../../../build/fonts/EncodeSansSC-Medium.ttf);
-}
 html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
 
 body {
-  font-family: "EncodeExtra";
+  font-family: "Encode Sans SC", sans-serif;
   width: 100%;
   font-size: 1.8rem;
 }
 
-.container {
-  width: 90%;
-}
-
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 img {
@@ -380,15 +365,14 @@ img {
 .header .header__principal--navegacion .carrito {
   margin-right: 3rem;
 }
-.header .header__navegacion {
-  border: 2px solid red;
-}
-.header .header__navegacion--enlaces {
-  border: 2px solid green;
+
+.header__navegacion--enlaces {
   padding: 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  font-weight: 200;
+  color: black;
 }
 
 /*# sourceMappingURL=sass.css.map */

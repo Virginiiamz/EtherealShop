@@ -1,38 +1,20 @@
 @use 'variables' as v;
 @use 'mixins' as m;
 
-@font-face {
-    font-family: EncodeExtra;
-    src: url(../../../build/fonts/EncodeSansSC-ExtraLight.ttf);
-}
-
-@font-face {
-    font-family: EncodeRegular;
-    src: url(../../../build/fonts/EncodeSansSC-Regular.ttf);
-}
-
-@font-face {
-    font-family: EncodeMedium;
-    src: url(../../../build/fonts/EncodeSansSC-Medium.ttf);
-}
-
 html {
     font-size: 62.5%;
     @include m.box-sizing(border-box);
 }
 
 body {
-    font-family: 'EncodeExtra';
+    font-family: 'Encode Sans SC', sans-serif;
     width: 100%;
     font-size: 1.8rem;
 }
 
-.container {
-    width: 90%;
-}
-
 a {
     text-decoration: none;
+    color: v.$black;
 }
 
 img {

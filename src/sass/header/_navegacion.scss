@@ -1,0 +1,14 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.header__navegacion {
+
+    &--enlaces {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-weight: v.$mainFont_Extra;
+        color: black;
+    }
+}
