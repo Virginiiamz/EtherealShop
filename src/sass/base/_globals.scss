@@ -2,17 +2,23 @@
 @use 'mixins' as m;
 
 
-@font-face {
-    font-family: EncodeExtra;
-    src: url(../../../build/fonts/EncodeSansSC-ExtraLight.ttf);
+
+
+html {
+    font-size: 62.5%;
+    @include m.box-sizing(border-box);
 }
 
-@font-face {
-    font-family: EncodeRegular;
-    src: url(../../../build/fonts/EncodeSansSC-Regular.ttf);
+body {
+    font-family: v.$main_font;
+    // font-size: 1.8rem;
 }
 
-@font-face {
-    font-family: EncodeMedium;
-    src: url(../../../build/fonts/EncodeSansSC-Medium.ttf);
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }

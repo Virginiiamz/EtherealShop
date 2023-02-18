@@ -1,0 +1,27 @@
+@use 'variables' as v;
+
+/* Mixins */
+// Box Sizing
+@mixin box-sizing($box_model) {
+    box-sizing: $box_model;
+}
+
+
+//Media queries 
+@mixin mobile {
+    @media screen and (min-width: v.$small) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: #{v.$medium}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: v.$big) {
+        @content;
+    }
+}
