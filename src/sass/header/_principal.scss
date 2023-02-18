@@ -1,61 +1,66 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
-/* Header */
-.header {
+/* Header Principal */
+.header__principal {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    background-color: v.$header_color;
+    border-bottom: 3px solid v.$secondary_color;
 
-    &__principal {
+    .header__logo {
         display: flex;
-        flex-direction: column;
-        background-color: v.$header_color;
-        border-bottom: 3px solid v.$secondary_color;
+        flex-direction: row;
+        justify-content: center;
 
-        .header__logo {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-
-            .logo {
-                background-size: cover;
-                width: 20%;
-                height: auto;
-            }
-
-            @include m.desktop {
-                .logo {
-                    width: 8%;
-                }
-            }
-
+        .logo {
+            background-size: cover;
+            width: 20%;
+            height: auto;
         }
 
+        @include m.tablet {
+            .logo {
+                width: 12%;
+            }
+        }
+
+        @include m.desktop {
+            .logo {
+                width: 8%;
+            }
+        }
     }
 
-    .header__principal--navegacion {
+    &--navegacion {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-
+    
         .navegacion {
             margin: 0.5rem;
         }
-
+    
         .icono {
             width: 2.5rem;
         }
-
+    
+        @include m.tablet {
+            .icono {
+                width: 2.8rem;
+            }
+        }
+    
         @include m.desktop {
             .icono {
                 width: 3rem;
             }
         }
-
+    
         .carrito {
             margin-right: 3rem;
         }
     }
 
 }
+
