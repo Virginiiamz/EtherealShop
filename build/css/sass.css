@@ -370,23 +370,36 @@ img {
   justify-content: flex-end;
 }
 .header__principal--navegacion .navegacion {
-  margin: 0.5rem;
+  margin: 0.3rem;
 }
-.header__principal--navegacion .icono {
-  width: 2.5rem;
+.header__principal--navegacion .bi {
+  color: #7C7C7C;
+  font-size: 2.4rem;
+}
+.header__principal--navegacion .bi-cart {
+  font-size: 2.2rem;
+  margin-right: 1rem;
 }
 @media screen and (min-width: 745px) {
-  .header__principal--navegacion .icono {
-    width: 2.8rem;
+  .header__principal--navegacion .bi {
+    font-size: 2.6rem;
+  }
+  .header__principal--navegacion .bi-cart {
+    font-size: 2.4rem;
+    margin-right: 2rem;
   }
 }
 @media screen and (min-width: 1028px) {
-  .header__principal--navegacion .icono {
-    width: 3rem;
+  .header__principal--navegacion .bi {
+    font-size: 3rem;
+  }
+  .header__principal--navegacion .bi-cart {
+    font-size: 2.8rem;
   }
 }
-.header__principal--navegacion .carrito {
-  margin-right: 3rem;
+.header__principal--navegacion .navegacion .bi:hover {
+  background-color: rgba(124, 124, 124, 0.3098039216);
+  transition-duration: 0.5s;
 }
 
 .header__navegacion {
@@ -408,6 +421,10 @@ img {
 .header__navegacion--enlaces .enlaces:hover {
   background-color: rgba(124, 124, 124, 0.3098039216);
   transition-duration: 0.5s;
+}
+
+.categorias {
+  border: 2px solid red;
 }
 
 /*# sourceMappingURL=sass.css.map */

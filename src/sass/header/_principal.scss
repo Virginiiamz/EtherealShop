@@ -36,29 +36,48 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+
     
         .navegacion {
-            margin: 0.5rem;
+            margin: 0.3rem;
         }
     
         .bi {
-            width: 100%;
+            color: v.$secondary_color;
+            font-size: 2.4rem;
+        }
+        
+        .bi-cart {
+            font-size: 2.2rem;
+            margin-right: 1rem;
         }
     
         @include m.tablet {
-            .icono {
-                width: 2.8rem;
+            .bi {
+                font-size: 2.6rem;
+            }
+
+            .bi-cart{
+                font-size:2.4rem;
+                margin-right: 2rem;
             }
         }
     
         @include m.desktop {
-            .icono {
-                width: 3rem;
+
+            .bi {
+                font-size: 3rem;
+            }
+            .bi-cart{
+                font-size:2.8rem;
             }
         }
     
-        .carrito {
-            margin-right: 3rem;
+        
+
+        .navegacion .bi:hover {
+            background-color: v.$third_color;
+            transition-duration: 0.5s;
         }
     }
 
