@@ -3,5 +3,60 @@
 
 
 .categorias {
-    border: 2px solid red;
+
+    &__titulo {
+        font-weight: v.$mainFont_Extra;
+    }
+
+    &__contenido {
+        @include m.grid(1, 1rem);
+        grid-template-rows: auto;
+
+        .categorias__card {
+            margin: 0 auto;
+            width: 75%;
+
+            &--imagen {
+                position: relative;
+            }
+
+            &--titulo {
+                background-color: v.$white_opacity;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 8.5rem;
+                margin: 0;
+
+                .card__titulo {
+                    font-weight: v.$cardFont_Medium;
+                    padding-top: 3.3rem;
+                }
+            }
+
+            &--imagen {
+                width: auto;
+            }
+        }
+
+    }
+
+    @include m.tablet{
+        &__contenido{
+            @include m.grid(2, 0);
+
+            .categorias__card{
+                width: 60%;
+            }
+        }
+    }
+
+    @include m.desktop() {
+        &__contenido {
+            .categorias__card {
+                width: 50%;
+            }
+        }
+    }
+
 }

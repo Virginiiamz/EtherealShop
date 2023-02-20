@@ -12,6 +12,8 @@ body {
     font-family: 'Encode Sans SC', sans-serif;
     width: 100%;
     font-size: 1.8rem;
+    margin: 0 auto;
+    background: v.$main_color;
 }
 
 a {
@@ -21,6 +23,14 @@ a {
 
 img {
     max-width: 100%;
-    display: block;
+    // display: block;
     object-position: center;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2.2rem;
 }
