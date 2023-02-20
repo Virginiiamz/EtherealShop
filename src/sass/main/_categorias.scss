@@ -1,8 +1,9 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
-
 .categorias {
+
+    margin-bottom: 3rem;
 
     &__titulo {
         font-weight: v.$mainFont_Extra;
@@ -11,10 +12,13 @@
     &__contenido {
         @include m.grid(1, 1rem);
         grid-template-rows: auto;
+        justify-content: center;
 
         .categorias__card {
             margin: 0 auto;
             width: 75%;
+            transition-property: transform;
+            transition-duration: 300ms;
 
             &--imagen {
                 position: relative;
@@ -29,7 +33,7 @@
                 margin: 0;
 
                 .card__titulo {
-                    font-weight: v.$cardFont_Medium;
+                    font-weight: v.$linkFont_Regular;
                     padding-top: 3.3rem;
                 }
             }
@@ -41,22 +45,33 @@
 
     }
 
-    @include m.tablet{
-        &__contenido{
+    @include m.tablet {
+        height: 50rem;
+
+        margin-top: 5rem;
+
+        &__contenido {
             @include m.grid(2, 0);
 
-            .categorias__card{
+
+            .categorias__card {
                 width: 60%;
             }
         }
     }
 
     @include m.desktop() {
+        height: 60rem;
+
         &__contenido {
             .categorias__card {
                 width: 50%;
             }
         }
+    }
+
+    .categorias__card:hover {
+        transform: scale(1.05);
     }
 
 }

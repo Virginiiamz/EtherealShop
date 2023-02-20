@@ -8,12 +8,18 @@ html {
     @include m.box-sizing(border-box);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Encode Sans SC', sans-serif;
     width: 100%;
     font-size: 1.8rem;
     margin: 0 auto;
     background: v.$main_color;
+    height: auto;
 }
 
 a {
