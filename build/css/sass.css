@@ -431,7 +431,7 @@ h3 {
 .header__navegacion .enlaces {
   padding: 1rem 2rem;
 }
-.header__navegacion--enlaces .inicio:link {
+.header__navegacion--enlaces .active:link {
   font-weight: 400;
 }
 .header__navegacion--enlaces .enlaces:hover {
