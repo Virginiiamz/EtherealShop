@@ -48,8 +48,6 @@
     @include m.tablet {
         height: 50rem;
 
-        margin-top: 5rem;
-
         &__contenido {
             @include m.grid(2, 0);
 
