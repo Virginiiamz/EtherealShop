@@ -1,18 +1,37 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
-
-.tienda {
-    border: 2px solid red;
-}
-
 .sudaderas {
-    border: 2px solid red;
-    background-color: red;
+
+    outline: 2px solid blueviolet;
+    width: 60%;
 
     &__titulo {
         font-weight: v.$mainFont_Extra;
-        color: red;
+    }
+
+    &__contenido {
+        @include m.grid(3, 4rem);
+
+        .sudaderas__card {
+            background-color: v.$secondary_color;
+            width: auto;
+
+            &--imagen {
+                width: 100%;
+
+                .imagenSudaderas {
+                    width: 350px;
+                    height: 350px;
+                    object-fit: cover;
+                }
+            }
+
+            &--informacion {
+                padding: 1rem;
+                color: v.$white;
+            }
+        }
     }
 
 }
