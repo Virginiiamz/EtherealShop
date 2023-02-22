@@ -502,33 +502,56 @@ h3 {
   transform: scale(1.05);
 }
 
-.sudaderas {
-  outline: 2px solid blueviolet;
-  width: 60%;
-}
 .sudaderas__titulo {
   font-weight: 200;
 }
 .sudaderas__contenido {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
 }
 .sudaderas__contenido .sudaderas__card {
-  background-color: #7C7C7C;
+  margin: 0 auto;
   width: auto;
+  padding: 0;
+  background-color: #7C7C7C;
 }
 .sudaderas__contenido .sudaderas__card--imagen {
-  width: 100%;
+  width: auto;
 }
 .sudaderas__contenido .sudaderas__card--imagen .imagenSudaderas {
-  width: 350px;
-  height: 350px;
+  width: 410px;
+  height: 410px;
   object-fit: cover;
+  display: block;
 }
 .sudaderas__contenido .sudaderas__card--informacion {
-  padding: 1rem;
   color: #FFFFFF;
+  background-color: #7C7C7C;
+  width: 410px;
+  height: 100px;
+}
+.sudaderas__contenido .sudaderas__card--informacion .card__text {
+  font-size: 2.2rem;
+  padding-left: 0.5rem;
+}
+.sudaderas__contenido .sudaderas__card--informacion .card__precio {
+  font-size: 1.8rem;
+  padding-left: 0.5rem;
+}
+@media screen and (min-width: 745px) {
+  .sudaderas__contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+@media screen and (min-width: 1028px) {
+  .sudaderas__contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.5rem;
+  }
 }
 
 .footer__contenido {
