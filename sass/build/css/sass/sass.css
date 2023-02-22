@@ -502,6 +502,10 @@ h3 {
   transform: scale(1.05);
 }
 
+.sudaderas {
+  border: 2px solid red;
+}
+
 .footer__contenido {
   background-color: #FFFFFF;
   width: 100%;
