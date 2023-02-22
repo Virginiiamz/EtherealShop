@@ -515,6 +515,8 @@ h3 {
   width: auto;
   padding: 0;
   background-color: #7C7C7C;
+  transition-property: transform;
+  transition-duration: 0.5s;
 }
 .sudaderas__contenido .sudaderas__card--imagen {
   width: auto;
@@ -538,6 +540,9 @@ h3 {
 .sudaderas__contenido .sudaderas__card--informacion .card__precio {
   font-size: 1.8rem;
   padding-left: 0.5rem;
+}
+.sudaderas__contenido .sudaderas__card:hover {
+  transform: scale(1.05);
 }
 @media screen and (min-width: 745px) {
   .sudaderas__contenido {
@@ -567,6 +572,8 @@ h3 {
   width: auto;
   padding: 0;
   background-color: #7C7C7C;
+  transition-property: transform;
+  transition-duration: 0.5s;
 }
 .camisetas__contenido .camisetas__card--imagen {
   width: auto;
@@ -590,6 +597,9 @@ h3 {
 .camisetas__contenido .camisetas__card--informacion .card__precio {
   font-size: 1.8rem;
   padding-left: 0.5rem;
+}
+.camisetas__contenido .camisetas__card:hover {
+  transform: scale(1.05);
 }
 @media screen and (min-width: 745px) {
   .camisetas__contenido {

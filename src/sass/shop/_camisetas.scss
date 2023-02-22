@@ -16,6 +16,8 @@
             width: auto;
             padding: 0;
             background-color: v.$secondary_color;
+            transition-property: transform;
+            transition-duration: 0.5s;
             
 
             &--imagen {
@@ -45,6 +47,10 @@
                     padding-left: 0.5rem;
                 }
             }
+        }
+
+        .camisetas__card:hover {
+            transform: scale(1.05);
         }
 
         @include m.tablet() {
