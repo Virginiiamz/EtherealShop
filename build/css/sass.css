@@ -617,6 +617,22 @@ h3 {
   }
 }
 
+.contacto__text--izquierda {
+  position: absolute;
+  width: 100px;
+  left: 10px;
+  top: 100px;
+  margin-left: 20px;
+}
+
+.contacto__text--derecha {
+  position: absolute;
+  width: 100px;
+  right: 10px;
+  top: 100px;
+  margin-right: 20px;
+}
+
 .footer__contenido {
   background-color: #FFFFFF;
   width: 100%;
