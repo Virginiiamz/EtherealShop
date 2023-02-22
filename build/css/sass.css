@@ -554,6 +554,58 @@ h3 {
   }
 }
 
+.camisetas__titulo {
+  font-weight: 200;
+}
+.camisetas__contenido {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+.camisetas__contenido .camisetas__card {
+  margin: 0 auto;
+  width: auto;
+  padding: 0;
+  background-color: #7C7C7C;
+}
+.camisetas__contenido .camisetas__card--imagen {
+  width: auto;
+}
+.camisetas__contenido .camisetas__card--imagen .imagenCamisetas {
+  width: 410px;
+  height: 410px;
+  object-fit: cover;
+  display: block;
+}
+.camisetas__contenido .camisetas__card--informacion {
+  color: #FFFFFF;
+  background-color: #7C7C7C;
+  width: 410px;
+  height: 100px;
+}
+.camisetas__contenido .camisetas__card--informacion .card__text {
+  font-size: 2.2rem;
+  padding-left: 0.5rem;
+}
+.camisetas__contenido .camisetas__card--informacion .card__precio {
+  font-size: 1.8rem;
+  padding-left: 0.5rem;
+}
+@media screen and (min-width: 745px) {
+  .camisetas__contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+@media screen and (min-width: 1028px) {
+  .camisetas__contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.5rem;
+  }
+}
+
 .footer__contenido {
   background-color: #FFFFFF;
   width: 100%;
