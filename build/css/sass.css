@@ -371,12 +371,12 @@ h3 {
   width: 20%;
   height: auto;
 }
-@media screen and (min-width: 745px) {
+@media screen and (min-width: 768px) {
   .header__principal .header__logo .logo {
     width: 12%;
   }
 }
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 1280px) {
   .header__principal .header__logo .logo {
     width: 8%;
   }
@@ -397,7 +397,7 @@ h3 {
   font-size: 2.2rem;
   margin-right: 1rem;
 }
-@media screen and (min-width: 745px) {
+@media screen and (min-width: 768px) {
   .header__principal--navegacion .bi {
     font-size: 2.6rem;
   }
@@ -406,7 +406,7 @@ h3 {
     margin-right: 2rem;
   }
 }
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 1280px) {
   .header__principal--navegacion .bi {
     font-size: 3rem;
   }
@@ -477,7 +477,7 @@ h3 {
 .categorias__contenido .categorias__card--imagen {
   width: auto;
 }
-@media screen and (min-width: 745px) {
+@media screen and (min-width: 768px) {
   .categorias {
     height: 50rem;
   }
@@ -490,7 +490,7 @@ h3 {
     width: 60%;
   }
 }
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 1280px) {
   .categorias {
     height: 60rem;
   }
@@ -544,14 +544,14 @@ h3 {
 .sudaderas__contenido .sudaderas__card:hover {
   transform: scale(1.05);
 }
-@media screen and (min-width: 745px) {
+@media screen and (min-width: 768px) {
   .sudaderas__contenido {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
   }
 }
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 1280px) {
   .sudaderas__contenido {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -601,14 +601,14 @@ h3 {
 .camisetas__contenido .camisetas__card:hover {
   transform: scale(1.05);
 }
-@media screen and (min-width: 745px) {
+@media screen and (min-width: 768px) {
   .camisetas__contenido {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
   }
 }
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 1280px) {
   .camisetas__contenido {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
