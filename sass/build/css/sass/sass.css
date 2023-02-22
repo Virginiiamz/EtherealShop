@@ -502,11 +502,17 @@ h3 {
   transform: scale(1.05);
 }
 
+.tienda {
+  border: 2px solid red;
+}
+
 .sudaderas {
   border: 2px solid red;
+  background-color: red;
 }
 .sudaderas__titulo {
   font-weight: 200;
+  color: red;
 }
 
 .footer__contenido {

@@ -2,11 +2,17 @@
 @use '../base/mixins' as m;
 
 
+.tienda {
+    border: 2px solid red;
+}
+
 .sudaderas {
     border: 2px solid red;
+    background-color: red;
 
     &__titulo {
         font-weight: v.$mainFont_Extra;
+        color: red;
     }
 
 }
