@@ -505,6 +505,9 @@ h3 {
 .sudaderas {
   border: 2px solid red;
 }
+.sudaderas__titulo {
+  font-weight: 200;
+}
 
 .footer__contenido {
   background-color: #FFFFFF;

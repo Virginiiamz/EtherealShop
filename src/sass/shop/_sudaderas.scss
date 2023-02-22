@@ -4,4 +4,9 @@
 
 .sudaderas {
     border: 2px solid red;
+
+    &__titulo {
+        font-weight: v.$mainFont_Extra;
+    }
+
 }
