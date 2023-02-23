@@ -512,26 +512,24 @@ h3 {
   gap: 2rem;
 }
 .sudaderas__contenido .sudaderas__card {
-  margin: 0 auto;
-  width: auto;
-  padding: 0;
+  width: 100%;
   background-color: #7C7C7C;
   transition-property: transform;
   transition-duration: 0.5s;
 }
 .sudaderas__contenido .sudaderas__card--imagen {
-  width: auto;
+  width: 100%;
 }
 .sudaderas__contenido .sudaderas__card--imagen .imagenSudaderas {
-  width: 410px;
-  height: 410px;
+  width: 100vw;
+  height: 400px;
   object-fit: cover;
   display: block;
 }
 .sudaderas__contenido .sudaderas__card--informacion {
   color: #FFFFFF;
   background-color: #7C7C7C;
-  width: 410px;
+  width: 360px;
   height: 100px;
 }
 .sudaderas__contenido .sudaderas__card--informacion .card__text {
@@ -550,13 +548,14 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1280px) {
   .sudaderas__contenido {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3.5rem;
+    gap: 3rem;
   }
 }
 
@@ -569,26 +568,24 @@ h3 {
   gap: 2rem;
 }
 .camisetas__contenido .camisetas__card {
-  margin: 0 auto;
-  width: auto;
-  padding: 0;
+  width: 100%;
   background-color: #7C7C7C;
   transition-property: transform;
   transition-duration: 0.5s;
 }
 .camisetas__contenido .camisetas__card--imagen {
-  width: auto;
+  width: 100%;
 }
 .camisetas__contenido .camisetas__card--imagen .imagenCamisetas {
-  width: 410px;
-  height: 410px;
+  width: 100vw;
+  height: 400px;
   object-fit: cover;
   display: block;
 }
 .camisetas__contenido .camisetas__card--informacion {
   color: #FFFFFF;
   background-color: #7C7C7C;
-  width: 410px;
+  width: 360px;
   height: 100px;
 }
 .camisetas__contenido .camisetas__card--informacion .card__text {
@@ -607,25 +604,15 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1280px) {
   .camisetas__contenido {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3.5rem;
+    gap: 3rem;
   }
-}
-
-.container--contacto {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
 }
 
 .footer__contenido {

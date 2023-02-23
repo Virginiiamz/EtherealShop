@@ -9,23 +9,22 @@
     }
 
     &__contenido {
-        @include m.grid(1, 2rem); 
+        @include m.grid(1, 2rem);
+
 
         .camisetas__card {
-            margin: 0 auto;
-            width: auto;
-            padding: 0;
+            width: 100%;
             background-color: v.$secondary_color;
             transition-property: transform;
             transition-duration: 0.5s;
             
 
             &--imagen {
-                width: auto;
+                width: 100%;
 
                 .imagenCamisetas {
-                    width: 410px;
-                    height: 410px;
+                    width: 100vw;
+                    height: 400px;
                     object-fit: cover;
                     display: block;
                 }
@@ -34,7 +33,7 @@
             &--informacion {
                 color: v.$white;
                 background-color: v.$secondary_color;
-                width: 410px;
+                width: 360px;
                 height: 100px;
 
                 .card__text {
@@ -55,11 +54,12 @@
 
         @include m.tablet() {
             @include m.grid(2, 3rem);
+            align-items: center
         }
 
         @include m.desktop() {
 
-            @include m.grid(3, 3.5rem);
+            @include m.grid(3, 3rem);
         }
     }
 
