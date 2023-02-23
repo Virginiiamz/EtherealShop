@@ -7,6 +7,7 @@
     }
 
     &__contenido {
+        @include m.grid(1, 2rem);
 
         .sudaderas__card {
             width: 100%;
@@ -19,8 +20,8 @@
                 width: 100%;
 
                 .imagenSudaderas {
-                    width: 360px;
-                    height: 360px;
+                    width: 100vw;
+                    height: 400px;
                     object-fit: cover;
                     display: block;
                 }
