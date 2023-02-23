@@ -32,13 +32,12 @@
             </nav>
         </div>
     </header>
-<main class="contacto">
-    <section class="container--contacto">
-        <h2 class="contacto__titulo text-center m-4">Contacto</h2>
-        <!--Primera columna-->
-        <div class="row m-4">
-            <div class="col-md-3">
-                <div class="contacto__text--izquierda">
+    <main class="contacto">
+        <section class="container--contacto">
+            <h2 class="contacto__titulo text-center m-4">Contacto</h2>
+            <!--Primera Columna-->
+            <div class="row">
+                <div class="col-md-3">
                     <h3 class="row-titulo"><i class="bi bi-folder"></i>Administración</h3>
                     <p>Tfno: +34 555555555 </br>
                     Fax: +34 666666666 </br>
@@ -51,62 +50,55 @@
                 Email: <a href="">comercial@etherealshop</a></p>
                 </div>
             </div>
-            <!--Segunda columa-->
-            <div class="col-md-6">
-                <form action="" name="contacto_form" id="contacto_form" class="form" method="post">
-                    <div class="mb-3 row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label" aria-required="true">Email</label>
-                        <input type="email" class="form-control p-2" id="EmailControl" aria-describedby="emailHelp">
-                        <label for="incidenciasDatalist" class="form-label">Incidencias</label>
-                        <input class="form-control p-4" list="datalistOptions" id="incidenciasDatalist" placeholder="Incidencia">
-                        <datalist id="datalistOptions">
-                            <option value="Problemas logísticos"></option>
-                            <option value="Problemas con el pedido"></option>
-                            <option value="Devolución y reembolso"></option>
-                            <option value="Pagos y promociones"></option>
-                            <option value="Producto y stock"></option>
-                            <option value="Cuenta"></option>
-                            <option value="Legal/Seguridad&Privacidad"></option>
-                            <option value="Medios de comunicación/CSR"></option>
-                            <option value="Sugerencia/disputa"></option>
-                        </datalist>
-                        <div class="mb-3">
-                            <label for="textArea" class="form-label">Información</label>
-                            <textarea class="form-control p-4" id="textArea" rows="4"></textarea>
-                        </div>
-                        <p class="input-block type-input">
-                            <input type="checkbox" name="politica" id="politica" required/> He leído y consiento el tratamiento de mis datos según <a target="_blank" href="politica.php">Política de privacidad</a></p>
-                            <p class="text-center p-2"><button type="submit" class="btn btn-lg btn-outline-secondary p-2">Enviar</button></p>
-                    </div>
-                </form>
-            </div>            
-            <!--Tercera columna-->
-            <div class="row">
+                <div class="col-md-6">
+                    <form action="" name="contacto_form" id="contacto_form" class="form" method="post">
+                        <div class="mb-3 row">
+                            <label for="staticEmail" class="col-sm-2 col-form-label" aria-required="true">Email</label>
+                            <input type="email" class="form-control p-2" id="EmailControl" aria-describedby="emailHelp">
+                            <label for="incidenciasDatalist" class="form-label">Incidencias</label>
+                            <input class="form-control p-4" list="datalistOptions" id="incidenciasDatalist" placeholder="Incidencia">
+                            <datalist id="datalistOptions">
+                                <option value="Problemas logísticos"></option>
+                                <option value="Problemas con el pedido"></option>
+                                <option value="Devolución y reembolso"></option>
+                                <option value="Pagos y promociones"></option>
+                                <option value="Producto y stock"></option>
+                                <option value="Cuenta"></option>
+                                <option value="Legal/Seguridad&Privacidad"></option>
+                                <option value="Medios de comunicación/CSR"></option>
+                                <option value="Sugerencia/disputa"></option>
+                            </datalist>
+                            <div class="mb-3">
+                                <label for="textArea" class="form-label">Información</label>
+                                <textarea class="form-control p-4" id="textArea" rows="4"></textarea>
+                            </div>
+                            <p class="input-block type-input">
+                                <input type="checkbox" name="politica" id="politica" required/> He leído y consiento el tratamiento de mis datos según <a target="_blank" href="politica.php">Política de privacidad</a></p>
+                                <p class="text-center p-2"><button type="submit" class="btn btn-lg btn-outline-secondary p-2">Enviar</button></p></div>
+                </div>
                 <div class="col-md-3">
-                    <div class="contact__texto--derecha">
-                    <h3 class="row-title"><i class="bi bi-signpost-split"></i>Dirección</h3>
-                    <p>Calle Falsa 123 </br>
-                        CP: 28999 Madrid(Madrid)</br>
-                    </p>
+                        <div class="contact__texto--derecha">
+                        <h3 class="row-title"><i class="bi bi-signpost-split"></i>Dirección</h3>
+                        <p>Calle Falsa 123 </br>
+                            CP: 28999 Madrid(Madrid)</br>
+                        </p>
+                    </div>
+                    <div class="contacto__texto--derecha">
+                        <h3 class="row-title"><i class="bi bi-clock"></i>Horario</h3>
+                        <p>
+                            <span class="">Lunes a Viernes</span></br>
+                            Mañanas: 8:30 a 14:00 </br>
+                            Tardes 17:00 a 22:00 </br>
+    
+                            <span>Sábados</span>
+                            Mañanas: 9:30 a 14:00
+                        </p>
+                    </div>
                 </div>
-                <div class="contacto__texto--derecha">
-                    <h3 class="row-title"><i class="bi bi-clock"></i>Horario</h3>
-                    <p>
-                        <span class="">Lunes a Viernes</span></br>
-                        Mañanas: 8:30 a 14:00 </br>
-                        Tardes 17:00 a 22:00 </br>
-
-                        <span>Sábados</span>
-                        Mañanas: 9:30 a 14:00
-                    </p>
                 </div>
             </div>
-
-            </div>
-        </div>
-    </section>
-</main>
-
+        </section>
+    </main>
 
     <footer class="text-center">
         <div class="footer__contenido">
