@@ -617,20 +617,15 @@ h3 {
   }
 }
 
-.contacto__text--izquierda {
-  position: absolute;
-  width: 100px;
-  left: 10px;
-  top: 100px;
-  margin-left: 20px;
+.container--contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.contacto__text--derecha {
-  position: absolute;
-  width: 100px;
-  right: 10px;
-  top: 100px;
-  margin-right: 20px;
+.row {
+  display: flex;
+  flex-direction: row;
 }
 
 .footer__contenido {
