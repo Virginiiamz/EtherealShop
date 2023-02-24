@@ -615,6 +615,25 @@ h3 {
   }
 }
 
+.contacto--columnas {
+  width: 100%;
+}
+
+.btn {
+  width: 75px;
+  height: 37.5px;
+  background-color: #FFFFFF;
+  font-size: 400;
+}
+
+.contacto__text--derecha {
+  font-size: 200;
+}
+
+.contacto__text--izquierda {
+  font-size: 200;
+}
+
 .footer__contenido {
   background-color: #FFFFFF;
   width: 100%;

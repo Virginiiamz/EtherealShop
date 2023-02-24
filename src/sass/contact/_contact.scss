@@ -1,3 +1,20 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
+.contacto--columnas{
+    width: 100%;
+}
+
+.btn{
+    width: 75px;
+    height: 37.5px;
+    background-color: v.$white;
+    font-size: v.$linkFont_Regular;
+}
+
+.contacto__text--derecha{
+    font-size: v.$mainFont_Extra;
+}
+.contacto__text--izquierda{
+    font-size: v.$mainFont_Extra;
+}
