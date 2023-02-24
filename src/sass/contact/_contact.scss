@@ -14,7 +14,22 @@
 
 .contacto__text--derecha{
     font-size: v.$mainFont_Extra;
+    margin-bottom: 2rem;
 }
 .contacto__text--izquierda{
     font-size: v.$mainFont_Extra;
+    margin-bottom: 2rem;
 }
+
+.contacto__form--centro{
+    width: 700px;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
