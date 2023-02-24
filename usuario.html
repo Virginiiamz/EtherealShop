@@ -36,7 +36,26 @@
         </div>
     </header>
 
+<main class="usuario">
+    <section class="container--usuario">
+        <h2 class="usuario__titulo text-center m-5">Registrarse</h2>
+        <section class="container__usuario--form container-sm">
+            <form action="php" class="form__registro">
+                <div class="input-group has-validation">
+                    <div class="form-floating is-invalid">
+                        <input type="text" class="form-control is-invalid" id="InputUser"placeholder='Username' required>
+                        <label for="InputUser">Username</label>
+                    </div>
+                    <div class="invalid-feedback">Por favor, elige un usuario.</div>
+                </div>
+                <input type="email" class="form-control is-invalid" id="emailInput" placeholder="name@example.com" value="test@example.com">
+                <label for="floatingPassword">Password</label>
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
 
+            </form>
+        </section>
+    </section>
+</main>
 
 
     <footer class="text-center">
