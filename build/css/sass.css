@@ -648,6 +648,10 @@ h3 {
   font-size: 1.5rem;
 }
 
+span {
+  font-weight: bold;
+}
+
 .footer__contenido {
   background-color: #FFFFFF;
   width: 100%;
