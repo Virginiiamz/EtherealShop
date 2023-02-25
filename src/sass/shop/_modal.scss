@@ -1,0 +1,43 @@
+@use '../custom' as c;
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.modal {
+    
+    .modal-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .tallas {
+            display: inline-flex;
+            flex-direction: row;
+
+            .form-check {
+                margin: 0.4rem;
+
+                .form-check-input {
+                    background-color: c.$secondary;
+                    border: c.$secondary;
+                    border-radius: 6px;
+                }
+            }
+        }
+
+        .btn {
+            width: 20rem;
+            background-color: c.$secondary;
+            color: c.$white;
+            padding: 0.8rem;
+            font-size: 1.3rem;
+            transition: 1s;
+        }
+
+        .btn:hover {
+            background-color: c.$white;
+            border: 1px solid c.$black;
+            color: c.$black;
+        }
+    }
+
+}

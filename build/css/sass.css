@@ -12200,6 +12200,37 @@ h3 {
   }
 }
 
+.modal .modal-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.modal .modal-footer .tallas {
+  display: inline-flex;
+  flex-direction: row;
+}
+.modal .modal-footer .tallas .form-check {
+  margin: 0.4rem;
+}
+.modal .modal-footer .tallas .form-check .form-check-input {
+  background-color: #7C7C7C;
+  border: #7C7C7C;
+  border-radius: 6px;
+}
+.modal .modal-footer .btn {
+  width: 20rem;
+  background-color: #7C7C7C;
+  color: #fff;
+  padding: 0.8rem;
+  font-size: 1.3rem;
+  transition: 1s;
+}
+.modal .modal-footer .btn:hover {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+
 .contacto--columnas {
   width: 100%;
 }
