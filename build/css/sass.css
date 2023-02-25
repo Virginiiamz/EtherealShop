@@ -12097,9 +12097,6 @@ h3 {
   transform: scale(1.05);
 }
 
-.sudaderas__titulo {
-  font-weight: 200;
-}
 .sudaderas__contenido {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -12107,7 +12104,6 @@ h3 {
 }
 .sudaderas__contenido .sudaderas__card {
   width: 100%;
-  background-color: #7C7C7C;
   transition-property: transform;
   transition-duration: 0.5s;
 }
@@ -12121,8 +12117,6 @@ h3 {
   display: block;
 }
 .sudaderas__contenido .sudaderas__card--informacion {
-  color: #FFFFFF;
-  background-color: #7C7C7C;
   width: 360px;
   height: 100px;
 }
@@ -12156,9 +12150,6 @@ h3 {
 .camisetas {
   margin-bottom: 12rem;
 }
-.camisetas__titulo {
-  font-weight: 200;
-}
 .camisetas__contenido {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -12166,7 +12157,6 @@ h3 {
 }
 .camisetas__contenido .camisetas__card {
   width: 100%;
-  background-color: #7C7C7C;
   transition-property: transform;
   transition-duration: 0.5s;
 }
@@ -12180,8 +12170,6 @@ h3 {
   display: block;
 }
 .camisetas__contenido .camisetas__card--informacion {
-  color: #FFFFFF;
-  background-color: #7C7C7C;
   width: 360px;
   height: 100px;
 }

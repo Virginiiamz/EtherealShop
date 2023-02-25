@@ -4,17 +4,12 @@
 .camisetas {
     margin-bottom: 12rem;
 
-    &__titulo {
-        font-weight: v.$mainFont_Extra;
-    }
-
     &__contenido {
         @include m.grid(1, 2rem);
 
 
         .camisetas__card {
             width: 100%;
-            background-color: v.$secondary_color;
             transition-property: transform;
             transition-duration: 0.5s;
             
@@ -31,8 +26,6 @@
             }
 
             &--informacion {
-                color: v.$white;
-                background-color: v.$secondary_color;
                 width: 360px;
                 height: 100px;
 
