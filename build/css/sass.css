@@ -11939,7 +11939,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
 }
 
 .header {
@@ -12025,6 +12025,7 @@ h3 {
   margin-top: 0.5rem;
 }
 .header__navegacion .enlaces {
+  align-self: center;
   padding: 1rem 2rem;
   margin-bottom: 0.5rem;
 }
@@ -12036,8 +12037,8 @@ h3 {
   transition-duration: 0.5s;
 }
 
-.categorias__titulo {
-  font-weight: 200;
+.categorias {
+  margin-bottom: 10rem;
 }
 .categorias__contenido {
   display: grid;
@@ -12065,8 +12066,8 @@ h3 {
   margin: 0;
 }
 .categorias__contenido .categorias__card--titulo .card__titulo {
-  font-weight: 400;
-  padding-top: 3.3rem;
+  padding-top: 3rem;
+  font-size: 2.4rem;
 }
 .categorias__contenido .categorias__card--imagen {
   width: auto;

@@ -2,10 +2,7 @@
 @use '../base/mixins' as m;
 
 .categorias {
-
-    &__titulo {
-        font-weight: v.$mainFont_Extra;
-    }
+    margin-bottom: 10rem;
 
     &__contenido {
         @include m.grid(1, 1rem);
@@ -32,8 +29,8 @@
                 margin: 0;
 
                 .card__titulo {
-                    font-weight: v.$linkFont_Regular;
-                    padding-top: 3.3rem;
+                    padding-top: 3rem;
+                    font-size: 2.4rem;
                 }
             }
 
