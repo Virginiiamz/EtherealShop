@@ -41,11 +41,12 @@
         <section class="sudaderas container-md mb-5" id="parteSudaderas">
             <h2 class="sudaderas__titulo text-center m-5 fw-lighter">Sudaderas</h2>
 
-            <div class="sudaderas__contenido text-start" data-bs-toggle="modal" data-bs-target="#modal_comprar">
-                <div class="sudaderas__card bg-secondary">
+            <div class="sudaderas__contenido text-start">
+                <div class="sudaderas__card bg-secondary" data-bs-imagen="sudadera1" data-bs-target="#modal_sudaderas"
+                data-bs-toggle="modal">
                     <figure class="sudaderas__card--imagen card1__fondo">
-                        <img src="build/img/sudadera1.png" alt="Sudadera básica negra"
-                            class="imagenSudaderas img-fluid" data-bs-imagen="sudadera1" data-bs-target="#modal_comprar" data-bs-toggle="modal">
+                        <img src="build/img/tienda/sudadera1.png" class="imagenSudaderas img-fluid"
+                            alt="Sudadera básica negra">
                     </figure>
                     <div class="sudaderas__card--informacion text-white">
                         <p class="card__text">Básica negra - Sudadera</p>
@@ -53,7 +54,8 @@
                     </div>
                 </div>
 
-                <div class="sudaderas__card bg-secondary">
+                <div class="sudaderas__card bg-secondary" data-bs-imagen="sudadera2" data-bs-target="#modal_sudaderas"
+                data-bs-toggle="modal">
                     <figure class="sudaderas__card--imagen card1__fondo">
                         <img src="build/img/tienda/sudadera2.png" alt="Sudadera básica blanca"
                             class="imagenSudaderas img-fluid">
@@ -64,7 +66,8 @@
                     </div>
                 </div>
 
-                <div class="sudaderas__card bg-secondary">
+                <div class="sudaderas__card bg-secondary" data-bs-imagen="sudadera3" data-bs-target="#modal_sudaderas"
+                data-bs-toggle="modal">
                     <figure class="sudaderas__card--imagen card1__fondo">
                         <img src="build/img/tienda/sudadera3.png" alt="Sudadera gris sunshine"
                             class="imagenSudaderas img-fluid">
@@ -75,7 +78,8 @@
                     </div>
                 </div>
 
-                <div class="sudaderas__card bg-secondary">
+                <div class="sudaderas__card bg-secondary" data-bs-imagen="sudadera4" data-bs-target="#modal_sudaderas"
+                data-bs-toggle="modal">
                     <figure class="sudaderas__card--imagen card1__fondo">
                         <img src="build/img/tienda/sudadera4.png" alt="Sudadera Ethereal gris"
                             class="imagenSudaderas img-fluid">
@@ -86,7 +90,8 @@
                     </div>
                 </div>
 
-                <div class="sudaderas__card bg-secondary">
+                <div class="sudaderas__card bg-secondary" data-bs-imagen="sudadera5" data-bs-target="#modal_sudaderas"
+                data-bs-toggle="modal">
                     <figure class="sudaderas__card--imagen card1__fondo">
                         <img src="build/img/tienda/sudadera5.png" alt="Sudadera Ethereal negra"
                             class="imagenSudaderas img-fluid">
@@ -97,7 +102,8 @@
                     </div>
                 </div>
 
-                <div class="sudaderas__card bg-secondary">
+                <div class="sudaderas__card bg-secondary" data-bs-imagen="sudadera6" data-bs-target="#modal_sudaderas"
+                data-bs-toggle="modal">
                     <figure class="sudaderas__card--imagen card1__fondo">
                         <img src="build/img/tienda/sudadera6.png" alt="Sudadera ethereal shop negra"
                             class="imagenSudaderas img-fluid">
@@ -215,30 +221,24 @@
         </div>
     </footer>
 
-    <!-- MODAL DE LAS CAMISETAS Y SUDADERAS -->
-    <div class="modal" tabindex="-1" id="modal_comprar">
+    <!-- EL MODAL DE SUDADERAS -->
+    <div class="modal fade" id="modal_sudaderas">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <!-- <h5 class="modal-title">Modal title</h5> -->
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <!-- <figure class="camisetas__card--imagen card1__fondo">
-                        <img src="build/img/camiseta6.png" alt="Camiseta negra degradada"
-                            class="imagenCamisetas img-fluid">
-                    </figure> -->
+                    <!-- <figure>
+                    <img src="img/galeria_01.jpg" class="img-fluid" alt="">
+                 </figure> -->
                 </div>
-                <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div> -->
             </div>
         </div>
     </div>
 
     <script>
-        const modalImagen = document.querySelector('#modal_comprar');
+        const modalImagen = document.querySelector('#modal_sudaderas');
 
         modalImagen.addEventListener('show.bs.modal', function (event) {
             const enlace = event.relatedTarget;
@@ -251,7 +251,7 @@
             const imagen = document.createElement('IMG');
 
             //creamos un template string para generar el nombre del archivo y su carpeta
-            imagen.src = `img/${rutaImagen}.png`;
+            imagen.src = `build/img/ropaSinRecortar/${rutaImagen}.png`;
 
             imagen.classList.add('img-fluid');
             imagen.alt = 'Imagen Galeri­a';
