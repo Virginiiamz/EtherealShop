@@ -1,12 +1,12 @@
+@use '../custom' as c;
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
 /* Header Principal */
 .header__principal {
     display: flex;
-    flex-direction: column;
-    background-color: v.$header_color;
-    border-bottom: 3px solid v.$secondary_color;
+    flex-direction: column;   
+    border-bottom: 3px solid;
 
     .header__logo {
         display: flex;
@@ -43,7 +43,7 @@
         }
     
         .bi {
-            color: v.$secondary_color;
+            color: c.$secondary;
             font-size: 2.4rem;
         }
         
@@ -73,10 +73,12 @@
             }
         }
     
-        
+        .navegacion .active:link {
+            color: v.$black;
+        }
 
         .navegacion .bi:hover {
-            background-color: v.$third_color;
+            background-color: c.$dark;
             transition-duration: 0.5s;
         }
     }

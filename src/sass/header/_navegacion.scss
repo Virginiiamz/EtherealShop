@@ -1,3 +1,4 @@
+@use '../custom' as c;
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
@@ -8,20 +9,20 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        font-weight: v.$mainFont_Extra;
         margin-top: 0.5rem;
     }
 
     .enlaces {
         padding: 1rem 2rem;
+        margin-bottom: 0.5rem;
     }
 
     &--enlaces .active:link {
-        font-weight: v.$linkFont_Regular;
+        font-weight: c.$font-weight-light;
     }
 
     &--enlaces .enlaces:hover {
-        background-color: v.$third_color;
+        background-color: c.$dark;
         transition-duration: 0.5s;
     }
 }
