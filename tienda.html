@@ -44,8 +44,8 @@
             <div class="sudaderas__contenido text-start" data-bs-toggle="modal" data-bs-target="#modal_comprar">
                 <div class="sudaderas__card bg-secondary">
                     <figure class="sudaderas__card--imagen card1__fondo">
-                        <img src="build/img/tienda/sudadera1.png" alt="Sudadera básica negra"
-                            class="imagenSudaderas img-fluid">
+                        <img src="build/img/sudadera1.png" alt="Sudadera básica negra"
+                            class="imagenSudaderas img-fluid" data-bs-imagen="sudadera1" data-bs-target="#modal_comprar" data-bs-toggle="modal">
                     </figure>
                     <div class="sudaderas__card--informacion text-white">
                         <p class="card__text">Básica negra - Sudadera</p>
@@ -224,18 +224,53 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <figure class="camisetas__card--imagen card1__fondo">
+                    <!-- <figure class="camisetas__card--imagen card1__fondo">
                         <img src="build/img/camiseta6.png" alt="Camiseta negra degradada"
                             class="imagenCamisetas img-fluid">
-                    </figure>
+                    </figure> -->
                 </div>
-                <div class="modal-footer">
+                <!-- <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
+
+    <script>
+        const modalImagen = document.querySelector('#modal_comprar');
+
+        modalImagen.addEventListener('show.bs.modal', function (event) {
+            const enlace = event.relatedTarget;
+            // nos dice a quÃ© le hemos dado click
+
+            const rutaImagen = enlace.getAttribute('data-bs-imagen');
+            //leemos nuestro atributo data-bs-imagen y lo guardamos en rutaImagen
+
+            // construimos la imagen
+            const imagen = document.createElement('IMG');
+
+            //creamos un template string para generar el nombre del archivo y su carpeta
+            imagen.src = `img/${rutaImagen}.png`;
+
+            imagen.classList.add('img-fluid');
+            imagen.alt = 'Imagen Galeri­a';
+
+            //indicamos dÃ³nde queremos mostrarla (modal-body en este caso)
+            const contenidoModal = document.querySelector('.modal-body');
+
+            //insertamos la imagen como contenido del modal (es un elemento hijo)
+            contenidoModal.appendChild(imagen);
+        });
+
+        //para cerrar el modal
+        modalImagen.addEventListener('hidden.bs.modal', function () {
+            const contenidoModal = document.querySelector('.modal-body');
+
+            //necesario limpiar el modal-body para que las imÃ¡genes no se vayan acumulando
+            contenidoModal.textContent = '';
+        });
+    </script>
 
 
 
