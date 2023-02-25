@@ -12256,12 +12256,10 @@ footer {
   width: 100%;
 }
 footer .footer__contenido {
-  background-color: #FFFFFF;
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-  color: #7C7C7C;
   margin: 0;
   height: 100%;
 }
@@ -12275,7 +12273,6 @@ footer .footer__contenido__iconos {
   font-size: 2rem;
 }
 footer .footer__contenido .bi {
-  color: #7C7C7C;
   padding: 0.5rem;
 }
 

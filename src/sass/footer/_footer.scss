@@ -8,12 +8,10 @@ footer {
     width: 100%;
 
     .footer__contenido{
-        background-color: v.$white;
         width: 100%;
         display: flex;
         flex-direction: column;
         padding: 1.5rem;
-        color: v.$secondary_color;
         margin: 0;
         height: 100%;
     
@@ -31,7 +29,6 @@ footer {
     }
 
     .bi{
-        color: v.$secondary_color;
         padding: 0.5rem;
     }
 
