@@ -1,3 +1,4 @@
+@use '../custom' as c;
 @use 'variables' as v;
 @use 'mixins' as m;
 
@@ -17,7 +18,7 @@ body {
     font-family: 'Encode Sans SC', sans-serif;
     width: 100%;
     font-size: 1.8rem;
-    background: v.$main_color;
+    background: c.$primary;
     height: 100%;
 }
 
