@@ -6,6 +6,7 @@
 html {
     font-size: 62.5%;
     @include m.box-sizing(border-box);
+    
 }
 
 * {
@@ -17,9 +18,8 @@ body {
     font-family: 'Encode Sans SC', sans-serif;
     width: 100%;
     font-size: 1.8rem;
-    margin: 0 auto;
     background: v.$main_color;
-    height: auto;
+    height: 100%;
 }
 
 a {

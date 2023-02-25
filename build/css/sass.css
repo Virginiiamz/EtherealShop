@@ -323,9 +323,8 @@ body {
   font-family: "Encode Sans SC", sans-serif;
   width: 100%;
   font-size: 1.8rem;
-  margin: 0 auto;
   background: #ECECEC;
-  height: auto;
+  height: 100%;
 }
 
 a {
@@ -440,9 +439,6 @@ h3 {
   transition-duration: 0.5s;
 }
 
-.categorias {
-  margin-bottom: 3rem;
-}
 .categorias__titulo {
   font-weight: 200;
 }
@@ -559,6 +555,9 @@ h3 {
   }
 }
 
+.camisetas {
+  margin-bottom: 12rem;
+}
 .camisetas__titulo {
   font-weight: 200;
 }
@@ -652,7 +651,13 @@ span {
   font-weight: bold;
 }
 
-.footer__contenido {
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+footer .footer__contenido {
   background-color: #FFFFFF;
   width: 100%;
   display: flex;
@@ -662,16 +667,16 @@ span {
   margin: 0;
   height: 100%;
 }
-.footer__contenido .footer__text {
+footer .footer__contenido .footer__text {
   font-size: 1.2rem;
 }
-.footer__contenido__iconos {
+footer .footer__contenido__iconos {
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-size: 2rem;
 }
-.footer__contenido .bi {
+footer .footer__contenido .bi {
   color: #7C7C7C;
   padding: 0.5rem;
 }

@@ -2,6 +2,7 @@
 @use '../base/mixins' as m;
 
 .sudaderas {
+
     &__titulo {
         font-weight: v.$mainFont_Extra;
     }

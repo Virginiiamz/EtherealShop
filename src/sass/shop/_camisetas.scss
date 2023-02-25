@@ -2,7 +2,7 @@
 @use '../base/mixins' as m;
 
 .camisetas {
-
+    margin-bottom: 12rem;
 
     &__titulo {
         font-weight: v.$mainFont_Extra;
