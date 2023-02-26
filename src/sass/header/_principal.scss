@@ -36,6 +36,7 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        align-items: center;
 
     
         .navegacion {
@@ -47,6 +48,10 @@
             font-size: 2.4rem;
         }
         
+        .bi-search {
+            font-size: 1.8rem;
+        }
+
         .bi-cart {
             font-size: 2.2rem;
             margin-right: 1rem;
@@ -55,6 +60,10 @@
         @include m.tablet {
             .bi {
                 font-size: 2.6rem;
+            }
+
+            .bi-search {
+                font-size: 2rem;
             }
 
             .bi-cart{
@@ -68,6 +77,11 @@
             .bi {
                 font-size: 3rem;
             }
+
+            .bi-search {
+                font-size: 2.2rem;
+            }
+
             .bi-cart{
                 font-size:2.8rem;
             }

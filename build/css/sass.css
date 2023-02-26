@@ -11978,6 +11978,7 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
 }
 .header__principal--navegacion .navegacion {
   margin: 0.3rem;
@@ -11985,6 +11986,9 @@ h3 {
 .header__principal--navegacion .bi {
   color: #7C7C7C;
   font-size: 2.4rem;
+}
+.header__principal--navegacion .bi-search {
+  font-size: 1.8rem;
 }
 .header__principal--navegacion .bi-cart {
   font-size: 2.2rem;
@@ -11994,6 +11998,9 @@ h3 {
   .header__principal--navegacion .bi {
     font-size: 2.6rem;
   }
+  .header__principal--navegacion .bi-search {
+    font-size: 2rem;
+  }
   .header__principal--navegacion .bi-cart {
     font-size: 2.4rem;
     margin-right: 2rem;
@@ -12002,6 +12009,9 @@ h3 {
 @media screen and (min-width: 1280px) {
   .header__principal--navegacion .bi {
     font-size: 3rem;
+  }
+  .header__principal--navegacion .bi-search {
+    font-size: 2.2rem;
   }
   .header__principal--navegacion .bi-cart {
     font-size: 2.8rem;
