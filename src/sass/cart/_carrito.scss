@@ -1,0 +1,42 @@
+@use '../custom' as c;
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.contenido__carrito {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12rem;
+
+    .carrito {
+        text-align: center;
+
+        .bi-basket3 {
+            font-size: 10rem;
+            color: c.$secondary;
+        }
+
+        &__informacion {
+            font-size: 2.2rem;
+            font-weight: c.$font-weight-medium;
+        }
+
+        .btn {
+            width: 30rem;
+            background-color: c.$secondary;
+            color: c.$white;
+            padding: 0.8rem;
+            font-size: 1.6rem;
+            transition: 1s;
+        }
+
+        .btn:hover {
+            background-color: white;
+            border: 1px solid c.$black;
+            color: c.$black;
+        }
+    }
+
+}

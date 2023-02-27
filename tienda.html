@@ -16,11 +16,12 @@
 <body>
     <header class="header">
         <div class="header__principal bg-light border-dark">
-            <a href="index.html">
-                <figure class="header__logo">
+            <figure>
+                <a href="index.html" class="header__logo">
                     <img src="build/img/logo1.png" alt="Logo Ethereal Shop" class="logo">
-                </figure>
-            </a>
+                </a>
+            </figure>
+
 
             <nav class="header__principal--navegacion">
                 <a href="#" class="navegacion"><i class="bi bi-search" alt="usuario"></i></a>
@@ -42,7 +43,7 @@
         <section class="sudaderas container-md mb-5" id="parteSudaderas">
             <h2 class="sudaderas__titulo text-center m-5 fw-lighter">Sudaderas</h2>
 
-            <div class="sudaderas__contenido text-start">
+            <div class="sudaderas__contenido text-start" id="contenedor-productos">
                 <div class="sudaderas__card bg-secondary" data-bs-imagen="sudadera1" data-bs-target="#modal_tienda"
                     data-bs-toggle="modal">
                     <figure class="sudaderas__card--imagen card1__fondo">
@@ -119,7 +120,7 @@
         <section class="camisetas container-md" id="parteCamisetas">
             <h2 class="camisetas__titulo text-center m-5 fw-lighter">Camisetas</h2>
 
-            <div class="camisetas__contenido text-start">
+            <div class="camisetas__contenido text-start" id="contenedor-productos">
                 <div class="camisetas__card bg-secondary" data-bs-imagen="camiseta1" data-bs-target="#modal_tienda"
                     data-bs-toggle="modal">
                     <figure class="camisetas__card--imagen card1__fondo">
@@ -226,13 +227,13 @@
                 <div class="modal-body">
                 </div>
                 <div class="modal-footer">
-                    <div class="tallas">
+                    <form class="tallas">
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="tallaXS">
                             <label class="form-check-label" for="tallaXS">XS</label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="tallaS">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="tallaS" checked>
                             <label class="form-check-label" for="tallaXS">S</label>
                         </div>
                         <div class="form-check">
@@ -247,10 +248,10 @@
                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="tallaXL">
                             <label class="form-check-label" for="tallaXS">XL</label>
                         </div>
-                    </div>
+                    </form>
 
 
-                    <a class="btn fw-medium" href="carrito.html">AÑADIR AL CARRITO</a>
+                    <a class="btn fw-medium agregar-carrito" href="carrito.html">AÑADIR AL CARRITO</a>
                 </div>
 
             </div>

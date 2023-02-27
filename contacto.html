@@ -16,11 +16,11 @@
 <body>
     <header class="header">
         <div class="header__principal bg-light border-dark">
-            <a href="index.html">
-                <figure class="header__logo">
-                <img src="build/img/logo1.png" alt="Logo Ethereal Shop" class="logo">
+            <figure>
+                <a href="index.html" class="header__logo">
+                    <img src="build/img/logo1.png" alt="Logo Ethereal Shop" class="logo">
+                </a>
             </figure>
-        </a>
 
             <nav class="header__principal--navegacion">
                 <a href="#" class="navegacion"><i class="bi bi-search" alt="usuario"></i></a>
@@ -41,74 +41,77 @@
         <section class="container--contacto container-md">
             <h2 class="contacto__titulo text-center mt-4">Contacto</h2>
             <section class="contacto--columnas row">
-                            <!--Primera Columna-->
-            <div class="primera__columna col m-4">
-                <div class="contacto__text--izquierda">
-                    <h3 class="titulo--administracion"><i class="bi bi-folder"></i>Administración</h3>
-                    <p>Tfno: +34 666666666</br>
-                        Fax: +34 888888888</br>
-                        Email: <a href="">administracion@etherealshop.com</a></p>
+                <!--Primera Columna-->
+                <div class="primera__columna col m-4">
+                    <div class="contacto__text--izquierda">
+                        <h3 class="titulo--administracion"><i class="bi bi-folder"></i>Administración</h3>
+                        <p>Tfno: +34 666666666</br>
+                            Fax: +34 888888888</br>
+                            Email: <a href="">administracion@etherealshop.com</a></p>
+                    </div>
+                    <div class="contacto__text--izquierda">
+                        <h3 class="titulo--comercial"><i class="bi bi-person"></i>Comercial</h3>
+                        <p>Tfno: +34 777777777 </br>
+                            Fax: +34 888888888 </br>
+                            Email: <a href="">comercial@etherealshop.com</a></p>
+                    </div>
                 </div>
-                <div class="contacto__text--izquierda">
-                    <h3 class="titulo--comercial"><i class="bi bi-person"></i>Comercial</h3>
-                    <p>Tfno: +34 777777777 </br>
-                        Fax: +34 888888888 </br>
-                        Email: <a href="">comercial@etherealshop.com</a></p>
-                </div>
-            </div>
 
-            <!--Segunda Columna-->
-            <div class="segunda__columna col">
-                <div class="contacto__form--centro">
-                    <form action="" name="contacto_form" id="contacto_form" class="form" method="post">
-                        <div class="mb-3 row">
-                            <label for="staticEmail" class="col-sm-2 col-form-label" aria-required="true">Email</label>
-                            <input type="email" class="form-control p-2" id="EmailControl" aria-describedby="emailHelp" required placeholder="email@example.com">
-                            <label for="incidenciasDatalist" class="form-label">Incidencias</label>
-                            <select class="form-select" aria-label="datalistOptions" aria-placeholder="Incidencias">
-                                <option value="Problemas logísticos">Problemas logísticos</option>
-                                <option value="Problemas con el pedido">Problemas con el pedido</option>
-                                <option value="Devolución y reembolso">Devolución y reembolso</option>
-                                <option value="Pagos y promociones">Pagos y promociones</option>
-                                <option value="Producto y stock">Producto y stock</option>
-                                <option value="Cuenta">Cuenta</option>
-                                <option value="Legal/Seguridad&Privacidad">Legal/Seguridad&Privacidad</option>
-                                <option value="Medios de comunicación/CSR">Medios de comunicación/CSR</option>
-                                <option value="Sugerencia/disputa">Sugerencia/disputa</option>
-                            </select>
-                            <div class="mb-5">
-                                <label for="textArea" class="form-label">Información</label>
-                                <textarea class="form-control p-4" id="textArea" rows="4" required></textarea>
+                <!--Segunda Columna-->
+                <div class="segunda__columna col">
+                    <div class="contacto__form--centro">
+                        <form action="" name="contacto_form" id="contacto_form" class="form" method="post">
+                            <div class="mb-3 row">
+                                <label for="staticEmail" class="col-sm-2 col-form-label"
+                                    aria-required="true">Email</label>
+                                <input type="email" class="form-control p-2" id="EmailControl"
+                                    aria-describedby="emailHelp" required placeholder="email@example.com">
+                                <label for="incidenciasDatalist" class="form-label">Incidencias</label>
+                                <select class="form-select" aria-label="datalistOptions" aria-placeholder="Incidencias">
+                                    <option value="Problemas logísticos">Problemas logísticos</option>
+                                    <option value="Problemas con el pedido">Problemas con el pedido</option>
+                                    <option value="Devolución y reembolso">Devolución y reembolso</option>
+                                    <option value="Pagos y promociones">Pagos y promociones</option>
+                                    <option value="Producto y stock">Producto y stock</option>
+                                    <option value="Cuenta">Cuenta</option>
+                                    <option value="Legal/Seguridad&Privacidad">Legal/Seguridad&Privacidad</option>
+                                    <option value="Medios de comunicación/CSR">Medios de comunicación/CSR</option>
+                                    <option value="Sugerencia/disputa">Sugerencia/disputa</option>
+                                </select>
+                                <div class="mb-5">
+                                    <label for="textArea" class="form-label">Información</label>
+                                    <textarea class="form-control p-4" id="textArea" rows="4" required></textarea>
+                                </div>
+                                <p class="input-block type-input">
+                                    <input type="checkbox" name="politica" id="politica" required /> He leído y
+                                    consiento el
+                                    tratamiento de mis datos según <a target="_blank" href="politica.php">Política de
+                                        privacidad</a>
+                                </p>
+                                <p class="text-center p-2"><button type="submit"
+                                        class="btn btn-lg btn-outline-secondary p-2">Enviar</button></p>
                             </div>
-                            <p class="input-block type-input">
-                                <input type="checkbox" name="politica" id="politica" required /> He leído y consiento el
-                                tratamiento de mis datos según <a target="_blank" href="politica.php">Política de
-                                    privacidad</a>
-                            </p>
-                            <p class="text-center p-2"><button type="submit"
-                                    class="btn btn-lg btn-outline-secondary p-2">Enviar</button></p>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
-            </div>
 
-            <!--Tercera Columna-->
-            <div class="tercera__columna col m-4">
-                <div class="contacto__text--derecha">
-                    <h3 class="titulo--direccion"><i class="bi bi-signpost-split"></i>Dirección</h3>
-                    <p>Calle Falsa 123 </br>
-                        CP: 28999 Madrid (Madrid)</br></p>
+                <!--Tercera Columna-->
+                <div class="tercera__columna col m-4">
+                    <div class="contacto__text--derecha">
+                        <h3 class="titulo--direccion"><i class="bi bi-signpost-split"></i>Dirección</h3>
+                        <p>Calle Falsa 123 </br>
+                            CP: 28999 Madrid (Madrid)</br></p>
+                    </div>
+                    <div class="contacto__text--derecha">
+                        <h3 class="titulo--horario"><i class="bi bi-clock"></i>Horario</h3>
+                        <p><span class="">Lunes a Viernes</span></br>
+                            Mañanas: 8:30 a 14:00 </br>
+                            Tardes: 17:00 a 22:00</br>
+                            <span class="">Sábados</span></br>
+                            Mañanas: 9:30 a 14:00
+                        </p>
+                    </div>
                 </div>
-                <div class="contacto__text--derecha">
-                    <h3 class="titulo--horario"><i class="bi bi-clock"></i>Horario</h3>
-                    <p><span class="">Lunes a Viernes</span></br>
-                        Mañanas: 8:30 a 14:00 </br>
-                        Tardes: 17:00 a 22:00</br>
-                        <span class="">Sábados</span></br>
-                        Mañanas: 9:30 a 14:00
-                    </p>
-                </div>
-            </div>
             </section>
         </section>
     </br>
