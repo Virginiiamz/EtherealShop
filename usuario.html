@@ -24,7 +24,7 @@
 
             <nav class="header__principal--navegacion">
                 <a href="#" class="navegacion"><i class="bi bi-search" alt="usuario"></i></a>
-                <a href="usuario.html" class="navegacion"><i class="bi bi-person active" alt="usuario"></i></a>
+                <a href="usuario.html" class="navegacion active"><i class="bi bi-person active" alt="usuario"></i></a>
                 <a href="carrito.html" class="navegacion"><i class="bi bi-cart" alt="carrito"></i></a>
             </nav>
         </div>
@@ -37,8 +37,8 @@
         </div>
     </header>
 
-    <main class="usuario container-fluid">
-        <section class="container--usuario">
+    <main class="usuario container-fluid d-flex justify-content-center align-items-center">
+        <section class="container--usuario bg-light rounded p-4" style="width: 36%">
             <h2 class="usuario__titulo text-center">Registrarse</h2>
             <div class="container--form ">
                 <form action="" name="contacto_form" id="contacto_form" class="form" method="post">
@@ -54,26 +54,24 @@
                             required>
                         <p class="input-block type-input">
                             <input type="checkbox" name="politica" id="politica" required /> He leído y acepto los <a
-                                target="_blank" href="servicio.php">Términos del servicio</a> y <a target="_blank"
-                                href="politica.php">Política de
-                                privacidad</a>
+                                target="_blank" href="servicio.php"><span>Términos del servicio</span> </a> y <a target="_blank"
+                                href="politica.php"><span>Política de
+                                    privacidad</span></a>
                         </p>
+                        <p class="text-center p-2"><button type="submit" class="btn btn-outline-secondary p-2 w-75">Crear cuenta</button></p>
+                        <span class="text-center"><p>¿Ya tienes una cuenta?</p></span>
                         <p class="text-center p-2"><button type="submit"
-                                class="btn btn-lg btn-outline-secondary p-2">Crearse cuenta</button></p>
-                        <p class="text-center">¿Ya tienes una cuenta?</p>
-                        <p class="text-center p-2"><button type="submit"
-                                class="btn btn-lg btn-outline-secondary p-2">Iniciar Sesión</button></p>
+                                class="btn btn-transparent p-2 w-75">Iniciar Sesión</button></p>
+                                
                     </div>
                 </form>
             </div>
-
         </section>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
     </main>
+</br>
+</br>
+</br>
+</br>
 
 
     <footer class="text-center bg-white text-secondary">

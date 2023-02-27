@@ -1,9 +1,11 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
-input, textarea, select, button {
-    width : 150px;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+.form-control{
+  width: 100%;
+}
+
+.btn-transparent{
+  background-color: transparent;
+  border: none;
+}
