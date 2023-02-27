@@ -39,34 +39,28 @@
 
     <main class="usuario">
         <section class="container--usuario">
-            <h2 class="usuario__titulo text-center m-5">Registrarse</h2>
-            <div class="container__usuario--form container-sm">
-                <form action="php" class="form__registro">
-                    <div class="input-group has-validation">
-                        <div class="form-floating is-invalid">
-                            <input type="text" class="form-control is-invalid" id="InputUser" placeholder='Username'
-                                required>
-                            <label for="InputUser">Username</label>
-                        </div>
-                        <div class="invalid-feedback">Por favor, elige un usuario.</div>
-                    </div>
-                    <input type="email" class="form-control is-invalid" id="emailInput" placeholder="name@example.com"
-                        value="test@example.com">
-                    <label for="floatingPassword">Password</label>
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <h2 class="usuario__titulo text-center ">Registrarse</h2>
+            <div class="container--form container-sm">            
+                <form action="" name="contacto_form" id="contacto_form" class="form container-sm" method="post">
+                <div class="mb-3 row">
+                    <label for="staticUser" class="col-sm-2 col-form-label" aria-required="true">Ususario</label>
+                    <input type="text" class="form-control p-2" id="UserControl" aria-describedby="userHelp" required placeholder="user123456">
+                    <label for="staticEmail" class="col-sm-2 col-form-label" aria-required="true">Email</label>
+                    <input type="email" class="form-control p-2" id="EmailControl" aria-describedby="emailHelp" required placeholder="email@example.com">
+                    <label for="staticPass" class="col-sm-2 col-form-label" aria-required="true">Contraseña</label>
+                    <input type="password" class="form-control p-2" id="PassControl" aria-describedby="passHelp" required>
                     <p class="input-block type-input">
-                        <input type="checkbox" name="politica" id="politica" required /> He leído y acepto los
-                        <a target="_blank" href="terminos.php">Términos de Servicio</a> y <a target="_blank"
-                            href="politica.php">Política de
+                        <input type="checkbox" name="politica" id="politica" required /> He leído y acepto los <a target="_blank" href="servicio.php">Términos del servicio</a> y <a target="_blank" href="politica.php">Política de
                             privacidad</a>
                     </p>
                     <p class="text-center p-2"><button type="submit"
-                            class="btn btn-lg btn-outline-secondary p-2">Crearse una cuenta</button></p>
-                    <p class="text-center">¿Ya tienes una cuenta?</p>
-                    <p class="text-center p-2"><button type="submit"
-                            class="btn btn-lg btn-outline-secondary p-2">Iniciar Sesión</button></p>
-                </form>
-            </div>
+                            class="btn btn-lg btn-outline-secondary p-2">Crearse cuenta</button></p>
+                            <p class="text-center">¿Ya tienes una cuenta?</p>
+                            <p class="text-center p-2"><button type="submit"
+                                class="btn btn-lg btn-outline-secondary p-2">Iniciar Sesión</button></p>
+                </div>
+            </form></div>
+
         </section>
     </main>
 
