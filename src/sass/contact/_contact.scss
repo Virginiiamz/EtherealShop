@@ -47,16 +47,28 @@ span{
     .segunda__columna {
       margin: 0 auto;
       width: 100%;
+      order: 3;
     }
     .titulo--administracion, .titulo--comercial, .titulo--direccion, .titulo--horario {
       margin-top: 2rem;
     }
+    .primera__columna,
+    .tercera__columna {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .segunda__columna {
+      margin-top: 2rem;
+    }
+
   }
   
   /* Para tabletas */
   @include m.tablet {
     .contacto--columnas {
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
       align-items: stretch;
@@ -64,6 +76,15 @@ span{
     .primera__columna, .tercera__columna {
       margin-right: 2rem;
       margin-left: 2rem;
+    }
+    .primera__columna,
+    .tercera__columna {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .segunda__columna {
+      margin-top: 2rem;
     }
   }
   
