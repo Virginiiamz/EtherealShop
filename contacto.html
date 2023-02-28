@@ -64,20 +64,24 @@
                             <div class="mb-3 row-cols-sm-auto">
                                 <label for="staticEmail" class="col-sm-auto col-form-label"
                                     aria-required="true">Email</label>
-                                <input type="email" class="form-control col-sm-auto p-2" id="EmailControl"
-                                    aria-describedby="emailHelp" required placeholder="email@example.com">
-                                <label for="incidenciasDatalist" class="form-label">Incidencias</label>
-                                <select class="form-select" aria-label="datalistOptions" aria-placeholder="Incidencias">
-                                    <option value="Problemas logísticos">Problemas logísticos</option>
-                                    <option value="Problemas con el pedido">Problemas con el pedido</option>
-                                    <option value="Devolución y reembolso">Devolución y reembolso</option>
-                                    <option value="Pagos y promociones">Pagos y promociones</option>
-                                    <option value="Producto y stock">Producto y stock</option>
-                                    <option value="Cuenta">Cuenta</option>
-                                    <option value="Legal/Seguridad&Privacidad">Legal/Seguridad&Privacidad</option>
-                                    <option value="Medios de comunicación/CSR">Medios de comunicación/CSR</option>
-                                    <option value="Sugerencia/disputa">Sugerencia/disputa</option>
-                                </select>
+                                    <div class="input-group">
+                                        <input type="email" class="form-control col-sm-auto p-2" id="EmailControl"
+                                        aria-describedby="emailHelp" required placeholder="email@example.com">
+                                        <span class="input-group-addon ms-2"></span>
+                                        <select class="form-select" aria-label="datalistOptions" aria-placeholder="Incidencias">
+                                            <option value="Problemas logísticos">Problemas logísticos</option>
+                                            <option value="Problemas con el pedido">Problemas con el pedido</option>
+                                            <option value="Devolución y reembolso">Devolución y reembolso</option>
+                                            <option value="Pagos y promociones">Pagos y promociones</option>
+                                            <option value="Producto y stock">Producto y stock</option>
+                                            <option value="Cuenta">Cuenta</option>
+                                            <option value="Legal/Seguridad&Privacidad">Legal/Seguridad&Privacidad</option>
+                                            <option value="Medios de comunicación/CSR">Medios de comunicación/CSR</option>
+                                            <option value="Sugerencia/disputa">Sugerencia/disputa</option>
+                                        </select>
+                                    </div>
+
+
                                 <div class="mb-5 col-sm-auto">
                                     <label for="textArea" class="form-label">Información</label>
                                     <textarea class="form-control p-4" id="textArea" rows="4" required></textarea>

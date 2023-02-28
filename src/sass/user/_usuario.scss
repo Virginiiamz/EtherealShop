@@ -3,9 +3,53 @@
 
 .form-control{
   width: 100%;
+
 }
 
 .btn-transparent{
   background-color: transparent;
   border: none;
+}
+
+
+/* Estilos para dispositivos con una resolución de pantalla de 768 píxeles o menos */
+@include m.mobile {
+  .usuario {
+    /* Ajustar la alineación de los elementos en el centro de la pantalla */
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .container--usuario {
+    /* Ajustar el ancho del contenedor de usuario */
+    width: 80%;
+  }
+}
+
+/* Estilos para dispositivos con una resolución de pantalla de 992 píxeles o menos */
+@include m.tablet {
+  .usuario {
+    /* Ajustar la alineación de los elementos en el centro de la pantalla */
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .container--usuario {
+    /* Ajustar el ancho del contenedor de usuario */
+    width: 60%;
+  }
+}
+
+/* Estilos para dispositivos con una resolución de pantalla de 1200 píxeles o menos */
+@include m.desktop {
+  .usuario {
+    /* Ajustar la alineación de los elementos en el centro de la pantalla */
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .container--usuario {
+    /* Ajustar el ancho del contenedor de usuario */
+    width: 50%;
+  }
 }
