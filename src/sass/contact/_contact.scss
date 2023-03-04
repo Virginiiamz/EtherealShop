@@ -2,96 +2,119 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
 
-.contacto--columnas{
-    width: 100%;
+.contacto--columnas {
+  width: 100%;
 }
 
-.btn{
-    width: 75px;
-    height: 37.5px;
-    background-color: v.$white;
-    font-size: v.$linkFont_Regular;
+.btn {
+  width: 12rem;
+  background-color: v.$white;
+  color: c.$black;
+  padding: 1rem;
+  font-size: 1.3rem;
+  transition: 1s;
 }
 
-.contacto__text--derecha{
-    font-size: v.$mainFont_Extra;
-    margin-bottom: 2rem;
-}
-.contacto__text--izquierda{
-    font-size: v.$mainFont_Extra;
-    margin-bottom: 2rem;
-}
-p{
-    font-size: 1.2rem;
+.btn:hover {
+  background-color: c.$secondary;
+  border: 1px solid c.$white;
+  color: c.$white;
 }
 
-h3{
-    font-size: 1.5rem;
+.contacto__text--derecha {
+  font-size: v.$mainFont_Extra;
+  margin-bottom: 2rem;
 }
 
-span{
-    font-weight: bold;
+.contacto__text--izquierda {
+  font-size: v.$mainFont_Extra;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+span {
+  font-weight: bold;
 }
 
 /* Para dispositivos móviles */
 @include m.mobile {
-    .primera__columna, .tercera__columna {
-      margin: 0 auto;
-      text-align: center;
-    }
-    .segunda__columna {
-      margin: 0 auto;
-      width: 100%;
-      order: 3;
-    }
-    .titulo--administracion, .titulo--comercial, .titulo--direccion, .titulo--horario {
-      margin-top: 2rem;
-    }
-    .primera__columna,
-    .tercera__columna {
-      width: 100%;
-      margin-right: 0;
-    }
-  
-    .segunda__columna {
-      margin-top: 2rem;
-    }
 
+  .primera__columna,
+  .tercera__columna {
+    margin: 0 auto;
+    text-align: center;
   }
-  
-  /* Para tabletas */
-  @include m.tablet {
-    .contacto--columnas {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: stretch;
-    }
-    .primera__columna, .tercera__columna {
-      margin-right: 2rem;
-      margin-left: 2rem;
-    }
-    .primera__columna,
-    .tercera__columna {
-      width: 100%;
-      margin-right: 0;
-    }
-  
-    .segunda__columna {
-      margin-top: 2rem;
-    }
+
+  .segunda__columna {
+    margin: 0 auto;
+    width: 100%;
+    order: 3;
   }
-  
-  /* Para pantallas grandes */
-  @include m.desktop {
-    .primera__columna, .tercera__columna {
-      flex-basis: 30%;
-      max-width: 30%;
-    }
-    .segunda__columna {
-      flex-basis: 60%;
-      max-width: 60%;
-    }
+
+  .titulo--administracion,
+  .titulo--comercial,
+  .titulo--direccion,
+  .titulo--horario {
+    margin-top: 2rem;
   }
-  
+
+  .primera__columna,
+  .tercera__columna {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .segunda__columna {
+    margin-top: 2rem;
+  }
+
+}
+
+/* Para tabletas */
+@include m.tablet {
+  .contacto--columnas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .primera__columna,
+  .tercera__columna {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  .primera__columna,
+  .tercera__columna {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .segunda__columna {
+    margin-top: 2rem;
+  }
+}
+
+/* Para pantallas grandes */
+@include m.desktop {
+
+  .primera__columna,
+  .tercera__columna {
+    flex-basis: 30%;
+    max-width: 30%;
+  }
+
+  .segunda__columna {
+    flex-basis: 60%;
+    max-width: 60%;
+  }
+}

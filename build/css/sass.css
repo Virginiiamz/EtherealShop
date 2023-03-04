@@ -12249,10 +12249,18 @@ h3 {
 }
 
 .btn {
-  width: 75px;
-  height: 37.5px;
+  width: 12rem;
   background-color: #FFFFFF;
-  font-size: 400;
+  color: #000;
+  padding: 1rem;
+  font-size: 1.3rem;
+  transition: 1s;
+}
+
+.btn:hover {
+  background-color: #7C7C7C;
+  border: 1px solid #fff;
+  color: #fff;
 }
 
 .contacto__text--derecha {
@@ -12279,7 +12287,8 @@ span {
 
 /* Para dispositivos móviles */
 @media screen and (min-width: 480px) {
-  .primera__columna, .tercera__columna {
+  .primera__columna,
+  .tercera__columna {
     margin: 0 auto;
     text-align: center;
   }
@@ -12288,7 +12297,10 @@ span {
     width: 100%;
     order: 3;
   }
-  .titulo--administracion, .titulo--comercial, .titulo--direccion, .titulo--horario {
+  .titulo--administracion,
+  .titulo--comercial,
+  .titulo--direccion,
+  .titulo--horario {
     margin-top: 2rem;
   }
   .primera__columna,
@@ -12309,7 +12321,8 @@ span {
     justify-content: center;
     align-items: stretch;
   }
-  .primera__columna, .tercera__columna {
+  .primera__columna,
+  .tercera__columna {
     margin-right: 2rem;
     margin-left: 2rem;
   }
@@ -12324,7 +12337,8 @@ span {
 }
 /* Para pantallas grandes */
 @media screen and (min-width: 1280px) {
-  .primera__columna, .tercera__columna {
+  .primera__columna,
+  .tercera__columna {
     flex-basis: 30%;
     max-width: 30%;
   }
